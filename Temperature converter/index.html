@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <h1 align="center">Temperature Converter</h1>
+            <div class="head">
+                <table border="0" cellspacing="5" cellpadding="2">
+                    <tr>
+                        <td>
+                            <p>Enter Number:</p>
+                        </td>
+                        <td>
+                            Choose Unit:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="tel" name="celcius" id="cel" placeholder="Enter here..." onkeyup="conVert()">
+                        </td>
+                        <td>
+                            <select id="temp" onchange="conVert()">
+                                <option value="Celcius">Celcius</option>
+                                <option value="Farenheit">Farenheit</option>
+                                <option value="Kelvin">Kelvin</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="convert" onclick="conVert()" id="con">
+                <table>
+                    <tr>
+                        <td>Result:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Celcius:</td>
+                        <td><input type="text" name="Celcius" id="cel0" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Farenheit:</td>
+                        <td><input type="text" name="Farenheit" id="far0" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Kelvin:</td>
+                        <td><input type="text" name="Kelvin" id="kel0" disabled></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </center>
+    <script src="index.js"></script>
+</body>
+
+</html>
